@@ -1,12 +1,14 @@
 #include "holberton.h"
 /**
- * print_triangle - print a triangle
- * @size: square dimensions
+ * print_triangle - function that draws a triange in the terminal.
+ * @size: size of the triangle that will be printed.
+ *
+ * Return: void.
  *
  */
 void print_triangle(int size)
 {
-	int a, b;
+	int i, j, k;
 
 	if (size <= 0)
 	{
@@ -14,20 +16,17 @@ void print_triangle(int size)
 	}
 	else
 	{
-		a = 0;
-		while (a < size)
+		for (i = 1; i <= size; i++)
 		{
-			b = 0;
-			while (b < size)
+			for (j = 1; j <= size - i; j++)
 			{
-				if (a < size - b - 1)
-					_putchar(32);
-				else
-					_putchar(35);
-				b++;
+				_putchar(' ');
 			}
-			a++;
-			_putchar(10);
+			for (k = 1; k <= i; k++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
 	}
 }
