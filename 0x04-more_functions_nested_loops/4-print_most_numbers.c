@@ -1,6 +1,5 @@
 #include "holberton.h"
 /**
-*main - check the code for Holberton School students.
 *print most numbers  prints numbers except 2 - 4
 *
 *Return: Always 0 (Success)
