@@ -1,33 +1,33 @@
 #include "holberton.h"
 /**
- * print_triangle - prints a triangle
- * @size: the size of the triangle
+ * print_triangle - print a triangle
+ * @size: square dimensions
+ *
  */
 void print_triangle(int size)
 {
-	int l, s, h;
+	int a, b;
 
-	if (size > 0)
+	if (size <= 0)
 	{
-		l = 1;
-		while (l <= size)
-		{
-			s = 1;
-			while (s <= size - l)
-			{
-				_putchar(' ');
-				s++;
-			}
-			h = 1;
-			while (h <= l)
-			{
-				_putchar('#');
-				h++;
-			}
-			_putchar('\n');
-			l++;
-		}
+		_putchar('\n');
 	}
 	else
-		_putchar('\n');
+	{
+		a = 0;
+		while (a < size)
+		{
+			b = 0;
+			while (b < size)
+			{
+				if (a < size - b - 1)
+					_putchar(32);
+				else
+					_putchar(35);
+				b++;
+			}
+			a++;
+			_putchar(10);
+		}
+	}
 }
