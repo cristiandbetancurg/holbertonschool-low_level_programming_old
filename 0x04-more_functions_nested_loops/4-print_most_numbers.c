@@ -1,17 +1,19 @@
 #include "holberton.h"
 /**
- *print most numbers  prints numbers except 2 - 4
- *
- *Return: Always 0 (Success)
+ * print most numbers prints the numbers  0 to 9  except 2 - 4
  */
 void print_most_numbers(void)
 {
-int n;
+	int i;
 
-for (n = 0; n <= 9; n++)
-{
-	if (n != 2 && n != 4)
-	_putchar(n + '0');
-}
-_putchar('\n');
+	i = 0;
+	while (i < 10)
+	{
+		if (i != 2 && i != 4)
+		{
+			_putchar('0' + i);
+		}
+		i++;
+	}
+	_putchar('\n');
 }
