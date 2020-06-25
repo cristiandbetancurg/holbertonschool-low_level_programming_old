@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * print_triangle >>>  print a triangle
+ * print_triangle - print a triangle
  * @size: square dimensions
+ *
  */
 void print_triangle(int size)
 {
