@@ -1,10 +1,10 @@
-#include <stdio.h>
 #include "holberton.h"
 
 /**
  * rot13 -- Rot13
  * @a: Array
  * Return: rot13
+ *
  */
 
 char *rot13(char *a)
@@ -26,5 +26,5 @@ char *rot13(char *a)
 	}
 
 
-	return (0);
+	return (a);
 }
