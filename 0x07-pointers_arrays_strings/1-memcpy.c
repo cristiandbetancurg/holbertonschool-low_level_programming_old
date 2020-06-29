@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _memcpy copy memory area
  * @dest: The *Pointer to detination memory
