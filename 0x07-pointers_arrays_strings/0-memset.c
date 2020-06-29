@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * @s: THE pointer to memory "s" to be full
+ * _memset --- Fill the constant memorandum here
+ * @s: The pointer to memory s to be full
  * @b: Constant to fill all memory
  * @n: first n bytes to fill
- * memset --- Fill the constant memorandum here
  * Return: Pointer s
  */
 
