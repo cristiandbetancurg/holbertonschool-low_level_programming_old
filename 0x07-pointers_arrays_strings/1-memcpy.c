@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * _memcpy copy memory area
- * @dest: The *Pointer to detination memory
- * @src: The *Pointer to source all memory
+ * @dest: The Pointer to detination memory
+ * @src: The Pointer to source all memory
  * @n: First n bytes to Copy
  * Return: Pointer dest'
  */
