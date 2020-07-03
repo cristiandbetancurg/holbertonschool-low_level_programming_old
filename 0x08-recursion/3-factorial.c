@@ -2,7 +2,7 @@
 
 /**
  * Factorial - return the factorial of n
- * @n: Number int 4 bytes
+ * @n: Number int
  * Return: function factorial
  */
 
