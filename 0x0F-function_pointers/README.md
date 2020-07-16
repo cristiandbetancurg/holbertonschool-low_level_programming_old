@@ -1,3 +1,3 @@
-#REAMDE
+# REAMDE
 
-## About to the Function_pointers
+## About to the Function Pointers
