@@ -8,13 +8,21 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
-	int sum = 0;
-	unsigned int i;
 	va_list valist;
+	int summation = 0;
+	unsigned int i;
 
+	/* initialize valist*/
 	va_start(valist, n);
+
+	/* access each argument of valist */
 	for (i = 0; i < n; i++)
-		sum = sum + va_arg(valist, int);
+	{
+		summation += va_arg(valist, int);
+	}
+
+	/* clean memory reserved*/
 	va_end(valist);
-	return (sum);
+
+	return (summation);
 }
